@@ -1,8 +1,10 @@
 import matplotlib.pyplot as plt
 from IPython import display
 
+# interactive mode
 plt.ion()
 
+# plot scorea and mean_scores
 def plot(scores, mean_scores):
     display.clear_output(wait=True)
     display.display(plt.gcf())
@@ -18,26 +20,3 @@ def plot(scores, mean_scores):
     plt.show(block=False)
     plt.pause(.1)
     
-# import matplotlib.pyplot as plt
-
-# def plot(scores, mean_scores):
-#     """
-#     Plot scores and average scores.
-
-#     Parameters:
-#     - scores (list): A list of numerical scores.
-#     - mean_scores (list): A list of numerical average scores.
-#     """
-#     plt.clf()
-#     plt.figure(figsize=(10, 6))  # Adjust the figure size if needed
-
-#     plt.plot(scores, label='Scores')
-#     plt.plot(mean_scores, label='Average Scores', linestyle='--')
-
-#     plt.title('Training...')
-#     plt.xlabel('Game Number')
-#     plt.ylabel('Score')
-#     plt.legend()  # Show legend with labels
-
-#     plt.grid(True)
-#     plt.show()

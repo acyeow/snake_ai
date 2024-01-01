@@ -66,7 +66,7 @@ class SnakeGameAI:
         
     def play_step(self, action):
         self.frame_iteration += 1
-        # 1. collect user input
+        # 1. quit
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 pygame.quit()
